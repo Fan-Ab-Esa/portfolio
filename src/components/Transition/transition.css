@@ -1,0 +1,17 @@
+.transition-box{
+    width: 400px;
+    height: 400px;
+    background-color: aquamarine;
+    position: relative;
+    top:200px;
+    transition-property: background border-radius margin transform;
+    transition-duration: 1.5s;
+    transition-delay: 0s;
+    transition-timing-function: ease-in-out;
+}
+.transition-box:hover{
+    background-color: brown;
+    border-radius: 50%;
+    margin:0px 0px 0px 100px;
+    transform: rotateY(360deg);
+}

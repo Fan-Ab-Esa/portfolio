@@ -1,0 +1,46 @@
+ .box-div{
+   background-color: red;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    animation-name: boxAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+@keyframes boxAnimation {
+    0%{
+       background-color:red;
+       left: 0px;
+       top:0px;
+    }
+    25%{
+        left: 160px;
+        top: 0px;
+        border-radius: 50% 0px 0px 0px;
+        transform: rotate(30deg);
+       
+    }
+    50% {
+        background-color: aqua;
+        border-radius: 50% 50% 0px 0px;
+        transform: rotate(60deg);
+        left: 290px;
+        top: 100px;
+        }
+    75% {
+        left: 0px;
+        top: 100px;
+        border-radius: 50% 50% 50% 0px;
+        transform: rotate(30deg);
+    }    
+    100%{
+        background-color:red;
+        border-radius: 100px;
+        top: 0px;
+        left: 0px;
+        border-radius: 50% 50% 50% 50%;
+    }
+}

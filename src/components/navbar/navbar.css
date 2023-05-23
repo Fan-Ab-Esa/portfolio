@@ -1,0 +1,29 @@
+.my-navbar-div-dark{
+    min-height: 100px;
+    background-color: rgb(176,0,93);
+    background: linear-gradient(17deg, rgba(176,0,93,0.9023984593837535) 0%,
+                                rgba(129,95,176,1) 6%, rgba(32,26,26,0.8239670868347339) 21%, 
+                                rgba(23,141,158,1) 47%, rgba(38,0,64,0.9192051820728291) 80%,
+                                rgba(84,10,40,0.9192051820728291) 100%);
+    justify-content: space-between;
+}
+.my-navbar-div-light{
+    min-height: 100px;
+    background: rgb(230,240,208);
+    background: linear-gradient(17deg, rgba(230,240,208,1) 0%, rgba(186,228,255,1) 39%, rgba(231,233,226,1) 77%);
+}
+.switch-holder{
+    height: 25px;
+    width: 85px;
+    margin-left: 20px;
+    padding:0px 0px 0px 10px;
+    
+    border-radius: 25%;
+}
+.switch-wrap{
+    height: 40px;
+
+}
+.switch-btn{
+    transform: scale(1.2);
+}

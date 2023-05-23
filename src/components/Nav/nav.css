@@ -1,0 +1,51 @@
+.nav-div{
+    padding: 100px 0px 0px 30px;
+    background-color:chartreuse;
+    height: 400px;
+    position: relative;
+    top: 300px;
+}
+.nav-title{
+    height: 50px;
+    animation-name: navTitleAni;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+.nav-note{
+    height: 150px;
+    max-width: 400px;
+    position: relative;;
+    animation-name: noteAni;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+}
+.nav-btn{
+    background-color: rgb(183, 183, 226);
+    position: relative;
+    transition-property: all;
+    transition-duration: 2s;
+    top: 50px;
+}
+.nav-btn:hover {
+    transform:rotateY(360deg);
+}
+@keyframes navTitleAni{
+    0%{
+        top: -100px;
+    }
+    80%{ 
+        top: 20px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+@keyframes noteAni{
+    0%{
+        left: -400px;
+    }
+    100%{
+        left: 30px;
+    }
+}
