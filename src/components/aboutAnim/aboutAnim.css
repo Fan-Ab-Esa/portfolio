@@ -1,0 +1,118 @@
+.aboutAnimParent{
+    height:300px;
+    width:300px;
+    background-color: red;
+    overflow:hidden;
+    border-radius: 20px;
+}
+.aboutAnimationfirstChild{
+    position: relative;
+    top: 150px;
+    width: 250px;
+    height: 30px;
+    background: #966F33 ;
+    border-radius: 10px;
+    animation-name: parentDivAnimation;
+    animation-duration: 2s;
+    animation-timing-function:cubic-bezier(.33,.64,.62,1.05);
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-direction:alternate;
+}
+.screenDiv{
+    position: relative;
+    height:200px;
+    width:200px;
+    overflow: hidden;
+     background-Color:blue;
+     border-radius: 20%;
+     animation-name:screenChange ;
+     animation-duration: 2s;
+     animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-direction:alternate;
+}
+.handImgDiv{
+    overflow: hidden;
+    width: 50px;
+    height:200px;
+    border-radius: 20px;
+    position:relative;
+    left:200px;
+    bottom:160px;
+    background-Color:white;
+}
+.screenData{
+    height: 35px;
+    width: 90%;
+    border: 3px solid red;
+    margin: 5px;
+    position: absolute;
+    top:0px;
+    right: 0px;
+}
+.screenDataOne{
+    animation-name: firstDataAnim;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+  
+    
+}
+.screenDataTwo{
+    animation-duration: 4s;
+    animation-delay: 4s;
+    animation-name: secondDataAnim;
+    animation-iteration-count: infinite;
+    
+}
+.screenDataThree{
+    animation-duration: 4s;
+    animation-delay: 8s;
+    animation-name: thirdDataAnim;
+    animation-iteration-count: infinite;
+}
+.screenDataFour {
+    animation-duration: 4s;
+    animation-delay: 12s;
+    animation-name: fourDataAnim;
+    animation-iteration-count: infinite;
+    background-color: aquamarine;
+}
+
+@keyframes firstDataAnim {
+    0%{top :-5%}    100%{top:100%}
+}
+@keyframes secondDataAnim {
+    0%{top :0%}    100%{top:100%}
+}
+@keyframes thirdDataAnim {
+    0%{top :10%}    100%{top:100%}
+}
+@keyframes fourDataAnim {
+    0%{top :15%}     100%{top:100%;  }
+}
+@keyframes parentDivAnimation {
+   
+    from {
+        transform: rotate(90deg);
+        left: 80px;
+        margin-bottom: 10px;
+    }
+    to { left: 240px;
+        margin-bottom: 0px;
+        transform: rotate(130deg);
+    }
+}
+@keyframes screenChange {
+    0%{
+        background-color: blue;
+       
+    }
+    10%{
+        background-color: yellow;
+    }
+    100%{
+        background-color: yellowgreen;
+    }
+}
