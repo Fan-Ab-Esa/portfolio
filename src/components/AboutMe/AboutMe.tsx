@@ -2,8 +2,8 @@ import './aboutMe.css'
 import comp from '../../assets/comp.jpg'
 const AboutMe = () => {
   return (
-    <div>
-      <div className=' aboutHolder'>
+   
+      <div className=' aboutHolder w-md-50'>
         <div>
             <h1>Hi I am Fanuel</h1>
             Hardworking full stack developer with more than 3 years of experience on web and mobile apps. 
@@ -13,11 +13,9 @@ const AboutMe = () => {
             Additionaly I can prgram android apps using java. 
 
         </div>
-        <div className='codeImgHolder'>
-        <img className='codeImg' src={comp} alt="Code" />
-        </div>
+    
       </div>
-    </div>
+   
   )
 }
 

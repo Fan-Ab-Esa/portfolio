@@ -1,16 +1,20 @@
 .aboutAnimParent{
-    height:300px;
-    width:300px;
-    background-color: red;
+    min-height:300px;
+    min-width:300px;
+    width: 40%;
+    aspect-ratio: 1/1;
+    background-color: rgb(195, 228, 206);
     overflow:hidden;
     border-radius: 20px;
+    border-radius: 20%;
+    margin: 0px 0px 0px 15px;
 }
 .aboutAnimationfirstChild{
     position: relative;
-    top: 150px;
-    width: 250px;
-    height: 30px;
-    background: #966F33 ;
+    top: 50%;
+    width: 83%;
+    height: 10%;
+    background: brown ;
     border-radius: 10px;
     animation-name: parentDivAnimation;
     animation-duration: 2s;
@@ -19,12 +23,40 @@
     animation-play-state: running;
     animation-direction:alternate;
 }
+@keyframes parentDivAnimation {
+   
+    from {
+        transform: rotate(90deg);
+        left: 25%;
+        margin-bottom: 10px;
+    }
+    to { left: 80%;
+        margin-bottom: 0px;
+        transform: rotate(130deg);
+    }
+}
+.handImgDiv{
+   
+    width: 15%;
+    height:280%;
+    border-radius: 20px;
+    position:relative;
+    left:80%;
+    bottom:150%;
+    background-Color:white;
+}
+.hand-wrist{
+    height:350%;
+    position: relative;
+    top: -300%;
+    background-color: black;
+}
 .screenDiv{
     position: relative;
-    height:200px;
-    width:200px;
+    height:75%;
+    width:75%;
     overflow: hidden;
-     background-Color:blue;
+     background-Color:black;
      border-radius: 20%;
      animation-name:screenChange ;
      animation-duration: 2s;
@@ -32,87 +64,71 @@
     animation-play-state: running;
     animation-direction:alternate;
 }
-.handImgDiv{
-    overflow: hidden;
-    width: 50px;
-    height:200px;
-    border-radius: 20px;
-    position:relative;
-    left:200px;
-    bottom:160px;
-    background-Color:white;
+@keyframes screenChange {
+    0%{
+        background-color: whitesmoke;
+       
+    }
+    10%{
+        background-color: rgb(49, 58, 47);
+    }
+    100%{
+        background-color: b;
+    }
 }
 .screenData{
-    height: 35px;
-    width: 90%;
-    border: 3px solid red;
+    height: 95%;
+    width: 84%;
+    border: 3px solid rgb(245, 202, 202);
     margin: 5px;
     position: absolute;
-    top:0px;
-    right: 0px;
+    border-radius: 10%;
+   
+    left: 6%;
+    top: 6%;
+    overflow: hidden;
 }
+
 .screenDataOne{
     animation-name: firstDataAnim;
-    animation-duration: 4s;
+    animation-duration: 20s;
     animation-delay: 0s;
     animation-iteration-count: infinite;
   
     
 }
 .screenDataTwo{
-    animation-duration: 4s;
-    animation-delay: 4s;
+    animation-duration: 20s;
+    animation-delay: 0s;
     animation-name: secondDataAnim;
     animation-iteration-count: infinite;
     
 }
 .screenDataThree{
-    animation-duration: 4s;
-    animation-delay: 8s;
+    animation-duration: 20s;
+    animation-delay: 0s;
     animation-name: thirdDataAnim;
     animation-iteration-count: infinite;
 }
 .screenDataFour {
-    animation-duration: 4s;
-    animation-delay: 12s;
+    animation-duration: 20s;
+    animation-delay: 0s;
     animation-name: fourDataAnim;
     animation-iteration-count: infinite;
-    background-color: aquamarine;
 }
 
 @keyframes firstDataAnim {
-    0%{top :-5%}    100%{top:100%}
+    0%{top :-100%} 20%{top:0%}  80%{top:0%}   100%{top:100%;  }
+   
 }
 @keyframes secondDataAnim {
-    0%{top :0%}    100%{top:100%}
+    0%{top :-100%} 20%{top:0%}  60%{top:0%} 80%{top:100%}   100%{top:100%;  }
 }
 @keyframes thirdDataAnim {
-    0%{top :10%}    100%{top:100%}
+   
+    0%{top :-100%} 20%{top:0%} 40%{top:0%} 60%{top:100%}   100%{top:100%}
 }
 @keyframes fourDataAnim {
-    0%{top :15%}     100%{top:100%;  }
+    0%{top :-100%} 21%{top:0%} 40%{top:100%}   100%{top:100%}
 }
-@keyframes parentDivAnimation {
-   
-    from {
-        transform: rotate(90deg);
-        left: 80px;
-        margin-bottom: 10px;
-    }
-    to { left: 240px;
-        margin-bottom: 0px;
-        transform: rotate(130deg);
-    }
-}
-@keyframes screenChange {
-    0%{
-        background-color: blue;
-       
-    }
-    10%{
-        background-color: yellow;
-    }
-    100%{
-        background-color: yellowgreen;
-    }
-}
+

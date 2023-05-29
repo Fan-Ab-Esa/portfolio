@@ -10,8 +10,11 @@ function App() {
   return (
     <div className='bg-secondary full-height' > 
     <NavBar/>
-    <AboutMe/>
-    <AboutAnim/>
+    <div className='d-sm-flex flex-wrap'>
+        <AboutMe/>
+        <AboutAnim/>
+    </div>
+  
       <Anim/>
       <AnimTwo/>
       <Transition/>
