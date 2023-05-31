@@ -14,7 +14,7 @@ const AboutAnim = () => {
         </div> 
         <div className='screenDiv'> 
           <div className='screenDataOne screenData'>
-            <h2 style={{position: 'absolute',width:'100%' ,color:'blue',backgroundColor:'yellow',opacity:'70%'}}> 
+            <h2 className='ps-3' style={{position: 'absolute',width:'100%' ,color:'blue',backgroundColor:'yellow',opacity:'70%'}}> 
               Easy Going 
             </h2> 
             <img src={easygo} style={{width:'100%', height:"100%"}} alt="computers"  />
@@ -33,9 +33,9 @@ const AboutAnim = () => {
             <img src={work} style={{width:'100%',height:'100%' }} alt="computers"  />
           </div>
           <div className='screenDataFour screenData bg-white'>
-            <h5 style={{position: 'absolute',left:'0%',top:'0%'}}>
+            <h4 className='ps-3' style={{position: 'absolute',left:'0%',top:'0%'}}>
             Full stack developer
-            </h5>
+            </h4>
             <img src={developer} style={{width:'100%',height:'80%',position:'absolute',top:'30%'}} alt="computers"/>
           </div>
         

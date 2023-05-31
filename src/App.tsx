@@ -5,6 +5,7 @@ import AnimTwo from './components/AnimTwo/AnimTwo'
 import Nav from './components/Nav/Nav'
 import Transition from './components/Transition/Transition'
 import AboutAnim from './components/aboutAnim/AboutAnim'
+import Experience from './components/experience/Experience'
 import NavBar from './components/navbar/NavBar'
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <AboutMe/>
         <AboutAnim/>
     </div>
-  
+    <Experience/>
       <Anim/>
       <AnimTwo/>
       <Transition/>

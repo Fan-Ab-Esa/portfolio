@@ -2,3 +2,14 @@
     height: fit-content;
   
 }
+aboutDescTextDiv{
+    font-size: 3vw;
+}
+@media only screen and (min-width:630px){
+    .aboutHolder{
+        font-family:cursive;
+        font-size: 1.8vw;
+        font-weight: bolder;
+        width: 50%;
+    }
+}
