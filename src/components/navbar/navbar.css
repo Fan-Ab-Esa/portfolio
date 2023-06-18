@@ -5,8 +5,11 @@
                                 rgba(129,95,176,1) 6%, rgba(32,26,26,0.8239670868347339) 21%, 
                                 rgba(23,141,158,1) 47%, rgba(38,0,64,0.9192051820728291) 80%,
                                 rgba(84,10,40,0.9192051820728291) 100%);
+ background: rgb(15,16,47);
+background: linear-gradient(252deg, rgba(15,16,47,1) 6%, rgba(0,0,0,1) 73%);
     justify-content: space-between;
 }
+
 .my-navbar-div-light{
     min-height: 100px;
     background: rgb(230,240,208);

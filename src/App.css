@@ -1,4 +1,35 @@
-.full-height{
+.fullHeight{
     min-height:500px;
     height: 100%;
+}
+
+.navHide{
+    animation-name:hideAnim ;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes hideAnim {
+    0%{
+        top: 0px;
+    }
+    100%{
+        top: -200px;
+    }
+}
+
+.navShow{
+    animation-name:showAnim ;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(.03,.9,.87,.95);
+
+}
+@keyframes showAnim {
+    0%{
+        top: -200px;
+    }
+    100%{
+        top: 0px;
+      
+        
+    }
 }

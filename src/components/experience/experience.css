@@ -2,15 +2,17 @@
     font-size: 2.5vw;
     font-family:Gadugi, Leelawadee,Gabriola ;
     border-radius: 30px 30px 0px 0px;
-    margin: 2%;
+    margin:0px 0px;
+    color: white;
+    background-color: rgb(19, 17, 17);
    
 }
 .expPSContainerDiv{
+    width: 100%;
     padding:3% 0px 2% 20%;
     border-bottom: solid 2px brown;
-    background-color: blue;
+    background-color: rgb(7, 7, 20);
     border-radius: 30px 30px 0px 0px;
-    
 }
 .pollenSilkLogo{
     border-radius: 30%;
@@ -35,9 +37,68 @@
 
 /* more work*/
 .moreWorkContainer{
-    width: 200px;
-    border: 2px solid blue;
+    padding: 5px;
+    width: 23%;
+    max-width: 200px;
+    min-width: 80px;
+    min-height: 100px;
+    aspect-ratio: 1 / 1;
+   border-radius: 7%;
+   position: relative;
+    overflow: hidden;
+    margin: 5px 0.5%;
+    animation-name: moreWorkAnimation ;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+    animation-timing-function:cubic-bezier(.37,.11,.61,.83);
+   
+}
+@keyframes  moreWorkAnimation{
+    0%{
+        transform: rotate(-3deg);
+        left: 3%;
+     }
+     100%{
+       transform: rotate(3deg);
+       left: 0%;
+     }
+ }
+.work-title{
+    font-size: x-large;
+    font-weight: 600;
+    padding-left: 2%;
 }
 .moreWorkImg{
-    max-height: 70px;
+    margin: 0px;
+    padding: 0px;
+    max-height: 100px;
+    min-height: 60px;
+    background-color: white;
+    aspect-ratio: 1/1;
 }
+.moreWorkText{
+    font-size: 1.5vw;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+@media (min-width: 768px) {
+    .expHolder{
+        font-size: x-large;
+        padding-left: 2%;
+    }
+    .moreWorkText{
+        font-size: large;
+    }
+ }
+
+ @media (max-width: 576px) {
+    .work-title{
+        font-size: small;
+    }
+ }
+

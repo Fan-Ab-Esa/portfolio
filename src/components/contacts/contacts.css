@@ -1,0 +1,41 @@
+.contactContainer{
+    height: fit-content;
+    width: 59%;
+   margin: 0% 20%;
+   color: wheat;
+   margin-top: 60px;
+   padding-bottom: 60px;
+}
+.phoneIcon{
+    color: wheat;
+    height: 50px;
+    width: 100px; 
+}
+.font_size_2{
+   font-weight: 700;
+    font-size: xx-large;
+    text-align: center;
+    margin: 0px 0px 15px 0px;
+}
+.textCenter{
+    text-align: center;
+    font-size: x-large;
+}
+.linkIcon{
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+}
+.resumeBtn{
+    position: relative;
+    top: 10px;
+    margin: 0px 15px;
+    height: 50px;
+    font-weight: 700;
+    font-size: xx-large;
+    background-color: rgb(50, 101, 177);
+    border-radius: 10px;
+    color: rgb(37, 32, 32);
+  
+    
+}

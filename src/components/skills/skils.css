@@ -1,0 +1,41 @@
+.skillContainer{
+    background-color: rgb(24, 22, 22);
+    padding:10px;
+    border-radius: 10px;
+}
+.skillCard{
+    max-width: 100px;
+    width: fit-content;
+    height: 80px;
+    color: black;
+    border-radius: 8%;
+    padding: 0px 3px;
+}
+.skillName{
+    font-weight: 600;
+    width: 100%;
+    color: wheat;
+}
+.skillIcon{
+    height: 50px;
+    width: 100%;
+    color: white;
+}
+.videoContainer{
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    background-color: solid black 2px;
+}
+.vidioClass{
+    margin: 0px;
+    min-width: 300px;
+    max-width: 90%;
+    border-radius: 5%;
+}
+
+@media only screen and (min-width: 760px) {
+    .w_md_50{
+        width: 50%;
+    }
+}

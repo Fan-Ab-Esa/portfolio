@@ -3,11 +3,16 @@
     min-width:300px;
     width: 40%;
     aspect-ratio: 1/1;
-    background-color: rgb(195, 228, 206);
+    background-color: rgb(32, 37, 34);
     overflow:hidden;
     border-radius: 20px;
     border-radius: 20%;
     margin: 0px 0px 0px 15px;
+}
+.vGone{
+ width: 20px;
+ border: 3px solid red;
+ opacity: 0%;
 }
 .aboutAnimationfirstChild{
     position: relative;
@@ -36,7 +41,6 @@
     }
 }
 .handImgDiv{
-   
     width: 15%;
     height:280%;
     border-radius: 20px;
@@ -49,7 +53,7 @@
     height:350%;
     position: relative;
     top: -300%;
-    background-color: black;
+    background-color: blue;
 }
 .screenDiv{
     position: relative;
@@ -57,6 +61,9 @@
     width:75%;
     overflow: hidden;
      background-Color:black;
+     background-image: url('../../assets/FullSize.jpg');
+     background-repeat:round;
+     background-size:auto;
      border-radius: 20%;
      animation-name:screenChange ;
      animation-duration: 2s;
@@ -73,20 +80,22 @@
         background-color: rgb(49, 58, 47);
     }
     100%{
-        background-color: b;
+        background-color: black;
     }
 }
 .screenData{
     height: 95%;
     width: 84%;
-    border: 3px solid rgb(245, 202, 202);
+    border: 2px solid rgb(0, 0, 0);
     margin: 5px;
     position: absolute;
+
     border-radius: 10%;
-   
+    background-color: rgb(48, 40, 40);
     left: 6%;
     top: 6%;
     overflow: hidden;
+
 }
 
 .screenDataOne{
@@ -94,9 +103,9 @@
     animation-duration: 20s;
     animation-delay: 0s;
     animation-iteration-count: infinite;
-  
-    
 }
+    
+
 .screenDataTwo{
     animation-duration: 20s;
     animation-delay: 0s;
@@ -104,17 +113,21 @@
     animation-iteration-count: infinite;
     
 }
+
 .screenDataThree{
     animation-duration: 20s;
     animation-delay: 0s;
     animation-name: thirdDataAnim;
     animation-iteration-count: infinite;
+    color: black;
 }
 .screenDataFour {
     animation-duration: 20s;
     animation-delay: 0s;
     animation-name: fourDataAnim;
     animation-iteration-count: infinite;
+    background-color: gray;
+    
 }
 
 @keyframes firstDataAnim {
